@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) 
+{
+    *
+    {
+        padding: 0;
+        margin: 0;
+        
+    }
+    .father
+    {
+        margin: 0;
+        overflow: hidden;
+    }
+    .trick
+    {
+        height: 100px;
+    }
+    nav
+    {
+        position: fixed;
+        display: flex;
+        z-index: 10;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 2%;
+        padding-top: 30px;
+        padding-right: 3%;
+        justify-content: center;
+    }
+    .nav2 #navigation
+    {
+        justify-content: space-around;
+    }
+    .card
+    {
+        width: 80%;
+    }
+    .logo
+    {
+        align-self: center;
+    }
+    #kplc1
+    {
+        margin-top: 5%;
+    }
+    .box1
+    {
+        margin: auto;
+        width: 90%;
+    }
+    .humbergure
+    {
+        display: block;
+    }
+}

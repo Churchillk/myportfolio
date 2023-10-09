@@ -1,0 +1,497 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: bei;
+}
+body
+{
+    background: rgb(27, 27, 27);
+}
+.father
+{
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-right: 7%;
+    overflow: hidden;
+}
+.f-main
+{
+    position: relative;
+    background: black;
+    height: auto;
+    width: 100%;
+}
+nav
+{
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    padding-top: 45px;
+    padding-right: 8%;
+    background-color: black;
+}
+.trick
+{
+height: 150px;
+background-color: black;
+}
+.logo
+{
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.f-main #login
+{
+    background-color: black;
+    min-width: 350px;
+    max-width: 400px;
+    position: absolute;
+    left: 150%;
+    top: 2%;
+}
+span
+{
+    color: #f9004d;
+}
+/*navigation bar */
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #998289;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover
+{
+    color: #f9004d;
+    transition: .4s;
+}
+.btn
+{
+    background-color: rgb(25, 150, 13);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover
+{
+    transform: scale(1.2); 
+}
+/*first screen */
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+#kplc1
+{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    align-self: center;
+}
+.mother
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+}
+.left, .right
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 15px 15px;
+    background: black;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+h1
+{
+    color: rgb(255, 255, 255);
+    margin: 20px 0 20px;
+    font-size: 45px;
+}
+h3
+{
+    margin-top: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom:3%;
+}
+h4
+{
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newslatter form
+{
+    width: 380px;
+    width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child
+{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+}
+.newslatter form input:last-child
+{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #444444;
+    top: 6px;
+    right: 6px;
+}
+#denim
+{
+    max-width:250px;
+    height: auto;
+}
+/*ABOUT US */
+.about
+{
+    width: 100%;
+    padding: 60px;
+    background: #101010;
+}
+#about-gif
+{
+    max-width: 250px;
+    height: auto;
+}
+.about-text
+{
+    width: 550px;
+}
+.about_main
+{
+    
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.about-text h2
+{
+    color: #f9004d;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5
+{
+    color: rgb(255, 252, 252);
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.about-text p
+{
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    margin-right: 10px;
+    text-align: justify;
+}
+button
+{
+    background-color: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 30px;
+    transition: .4s;
+}
+button:hover
+{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    color: #ffffff;
+}
+/*services*/
+.services
+{
+    background: black;
+    width: 100%;
+    padding: 80px 0px;
+    
+}
+.title h2
+{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+.card
+{
+    height: auto;
+    width: 335px;
+    padding: 20px 35px;
+    background: #101010;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i
+{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+h5
+{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin-bottom: 15px; 
+}
+.pra p
+{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button
+{
+    background-color: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 22px;
+    transition: .4s;
+}
+.card .button:hover
+{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    color: #ffffff;
+}
+.contact-us
+{
+    width: 100%;
+    height: 290px;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-us p
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-us .button-two
+{
+    background-color: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 30px;
+    transition: .4s;
+}
+.contact-us .button-two:hover
+{
+    background-color: transparent;
+    border: 2px solid rgb(0, 140, 210);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+#footer
+{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+    
+}
+#footer p:first-child
+{
+    margin: 5%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#footer p:nth-child(2)
+{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    align-items: center;
+    line-height: 26px;
+}
+.all
+{
+    max-width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    padding: 60px;
+    border: solid beige 1px;
+    background: url("tech.gif");
+    color: transparent;
+    background-clip: text;
+    background-attachment: fixed;
+    --webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+}
+#footer h2
+{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.media
+{
+    display: flex;
+    flex-direction: row;
+}
+.media a
+{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.media a:hover
+{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+/*WATER*/
+
+#fs
+{
+    position: absolute;
+    font-size: 3em;
+    color: transparent;
+    -webkit-text-stroke: 2px #2e2f30;
+}
+#ls
+{
+    position: absolute;
+    font-size: 3em;
+    color: #f9004d;
+    animation: animate 4s ease-in-out infinite;
+    
+}
+@keyframes animate
+{
+    0%, 100%
+    {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+                    54% 60%, 70% 61%, 84%
+                     59%, 100% 52%, 100%
+                     100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
+                            51% 62%, 67% 50%, 84% 45%,
+                            100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+/*WATER*/
