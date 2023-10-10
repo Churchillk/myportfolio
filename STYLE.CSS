@@ -45,11 +45,7 @@ nav
     padding-right: 8%;
     background-color: black;
 }
-.trick
-{
-height: 150px;
-background-color: black;
-}
+
 .logo
 {
     color: #ffffff;
@@ -69,6 +65,11 @@ background-color: black;
 span
 {
     color: #f9004d;
+}
+span a
+{
+    color: #60bd13e5;
+    text-decoration: none;
 }
 /*navigation bar */
 nav ul li
@@ -112,14 +113,6 @@ nav ul li a:hover
     left: 8%;
     transform: translateY(-50%);
 }
-#kplc1
-{
-    position: relative;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    align-self: center;
-}
 .mother
 {
     position: relative;
@@ -129,6 +122,7 @@ nav ul li a:hover
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    padding-top: 100px;
 
 }
 .left, .right
@@ -195,7 +189,7 @@ h4
     top: 6px;
     right: 6px;
 }
-#denim
+#first-pic
 {
     max-width:250px;
     height: auto;
@@ -204,17 +198,22 @@ h4
 .about
 {
     width: 100%;
-    padding: 60px;
+    padding-top: 100px;
     background: #101010;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("rubix.gif");
+    background-blend-mode: color-dodge;
 }
-#about-gif
+#about-img
 {
-    max-width: 250px;
-    height: auto;
+    width: 30%;
+    height: 100vh;
 }
 .about-text
 {
     width: 550px;
+    margin: 5%;
 }
 .about_main
 {
@@ -273,11 +272,21 @@ button:hover
     color: #ffffff;
 }
 /*services*/
+/*experience*/
+.experience
+{
+    width: 100%;
+    padding-top: 100px;
+    background: black;
+    
+}
 .services
 {
-    background: black;
+    background: #101010;
     width: 100%;
-    padding: 80px 0px;
+    padding: 60px 0px;
+    background-image: url("rubix.gif");
+    background-blend-mode: lighten;
     
 }
 .title h2
@@ -300,12 +309,13 @@ button:hover
     height: auto;
     width: 335px;
     padding: 20px 35px;
-    background: #101010;
+    background: black;
     border-radius: 20px;
-    margin: 15px;
+    margin: 0 15px;
     position: relative;
     overflow: hidden;
     text-align: center;
+    background-image: url("");
 }
 .card i
 {
@@ -317,13 +327,13 @@ button:hover
 }
 h5
 {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 23px;
     margin-bottom: 15px; 
 }
 .pra p
 {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(128, 133, 131);
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
@@ -347,47 +357,33 @@ h5
     cursor: pointer;
     color: #ffffff;
 }
-.contact-us
+.hobby
 {
     width: 100%;
     height: 290px;
-    background: #101010;
+    background: black;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-.contact-us p
+.hobby #call
 {
-    text-align: center;
+    color: #f9004d;
+    align-self: center;
+}
+.hobby p
+{
+    text-align: justify;
     color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 25px;
+    padding-bottom: 10px;
+    margin: 0 15%;
 }
-.contact-us .button-two
-{
-    background-color: #f9004d;
-    color: white;
-    border: 2px solid transparent;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 13px 30px;
-    transition: .4s;
-}
-.contact-us .button-two:hover
-{
-    background-color: transparent;
-    border: 2px solid rgb(0, 140, 210);
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-}
+
 #footer
 {
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: #101010;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -395,6 +391,7 @@ h5
     justify-content: center;
     height: auto;
     flex-wrap: wrap;
+    background-image: url("shield.jpg");
     
 }
 #footer p:first-child
@@ -433,7 +430,7 @@ h5
 #footer h2
 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(94, 255, 0);
 }
 .media
 {

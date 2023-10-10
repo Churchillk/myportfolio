@@ -11,10 +11,6 @@
         margin: 0;
         overflow: hidden;
     }
-    .trick
-    {
-        height: 100px;
-    }
     nav
     {
         position: fixed;
@@ -30,6 +26,18 @@
     .nav2 #navigation
     {
         justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav2
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #ph
+    {
+        display: none;
     }
     .card
     {
@@ -39,17 +47,56 @@
     {
         align-self: center;
     }
-    #kplc1
-    {
-        margin-top: 5%;
-    }
     .box1
     {
         margin: auto;
         width: 90%;
     }
-    .humbergure
+    #first-pic
     {
-        display: block;
+        width: 300px;
+        height: 250px;
+        border-radius: 50%;
     }
+    .mother
+    {
+        padding-top: 130px;
+    }
+    .about, .experience
+    {
+        padding-top: 120px;
+    }
+    .about
+    {
+        background-image: url("linux.jpg");
+        background-position: center;
+        background-blend-mode: normal;
+    }
+    #about-img
+    {
+        display: none;
+    }
+    #footer
+    {
+        background-position: center;
+        background-size: auto;
+    } 
+    .services
+    {
+        padding-top: 120px;
+    }
+    .card
+    {
+        max-height: auto;
+        margin-bottom: 10%;
+    }
+    .pra p
+    {
+        font-weight: bold;
+    }
+    .hobby p
+    {
+        margin: 0 20px;
+    }
+
 }
