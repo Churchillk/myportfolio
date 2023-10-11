@@ -98,5 +98,9 @@
     {
         margin: 0 20px;
     }
+    .text-1, .text-2
+    {
+        font-size: 25px;
+    }
 
 }

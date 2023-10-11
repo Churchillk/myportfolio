@@ -7,11 +7,12 @@
 }
 .text-1,
 .text-2 {
+  flex-wrap: nowrap;
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
   position: relative;
-  animation-duration: 6s;
+  animation-duration: 10s;
   animation-timing-function: steps(25, end);
   animation-iteration-count: infinite;
 }
@@ -19,34 +20,34 @@
 .text-2::after {
   content: "|";
   position: absolute;
-  right: 0;
+  right: 1px;
   animation: caret infinite;
   animation-duration: 1s;
-  animation-timing-function: steps(1, end);
+  animation-timing-function: steps(25, end);
 }
 @keyframes text2 {
   0%,
   50%,
   100% {
     width: 0;
+    text-1
+    {
+      display: none;
+    }
   }
   60%,
   90% {
-    width: 10.2em;
+    width: 9em;
   }
 }
 @keyframes text1 {
   0%,50%,100% 
   {
     width: 0;
-    body 
-    {
-      font-size: 100px;
-    }
   }
-  10%, 40% 
+  10%, 40%
   {
-    width: 10.9em;
+    width: 9.3em;
     color: #f9004d;
   }
 }
