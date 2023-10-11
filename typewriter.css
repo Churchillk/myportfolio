@@ -36,16 +36,18 @@
   }
 }
 @keyframes text1 {
-  0%,
-  50%,
-  100% {
-    width: 0;body {
+  0%,50%,100% 
+  {
+    width: 0;
+    body 
+    {
       font-size: 100px;
     }
   }
-  10%,
-  40% {
+  10%, 40% 
+  {
     width: 14em;
+    color: #f9004d;
   }
 }
 @keyframes caret {
