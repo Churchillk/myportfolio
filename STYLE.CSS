@@ -378,14 +378,57 @@ h5
     margin: 0 15%;
 }
 /*referees*/
-.body
+.refer
 {
-    min-height: 100vh;
+    background: #101010;
+    width: 100%;
+    padding: 60px 0px;
+    background-image: url("rubix.gif");
+    background-blend-mode: lighten;
+    
+}
+.title h2
+{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin: 30px auto;
+    text-align: center;
+}
+.ref-box
+{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    background-color: #101010;
+    gap: 2%;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+.card
+{
+    height: auto;
+    width: 335px;
+    padding: 20px 35px;
+    background: black;
+    border-radius: 20px;
+    margin: 0 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("");
+}
+.card i
+{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+h5
+{
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 15px; 
 }
 .leaders
 {
@@ -462,13 +505,6 @@ h5
     text-align: center;
     margin-bottom: 10px;
     color: #a5a5a5;
-}
-.leaders-wrapper
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 /*referees*/
 #footer
