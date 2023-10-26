@@ -7,10 +7,10 @@
 }
 .text-1,
 .text-2 {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow: hidden;
   white-space: nowrap;
-  display: inline-block;
+  display: flex;
   position: relative;
   animation-duration: 10s;
   animation-timing-function: steps(25, end);
@@ -23,7 +23,7 @@
   right: 1px;
   animation: caret infinite;
   animation-duration: 1s;
-  animation-timing-function: steps(25, end);
+  animation-timing-function: steps(1, end);
 }
 @keyframes text2 {
   0%,
@@ -37,7 +37,7 @@
   }
   60%,
   90% {
-    width: 9em;
+    width: 12em;
   }
 }
 @keyframes text1 {
@@ -47,7 +47,7 @@
   }
   10%, 40%
   {
-    width: 9.3em;
+    width: 18em;
     color: #f9004d;
   }
 }

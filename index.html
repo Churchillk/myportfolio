@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="refresh" content="1s">
+    <link rel="icon" type="images/x-icon" href="penguin.jpg"/>
     <link rel="stylesheet" href="STYLE.CSS">
-    <link rel="stylesheet" href="phoneview.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel=stylesheet> 
     <link rel="stylesheet" href="login.CSS">
@@ -23,10 +23,13 @@
             <h2 class="logo">
                 My <span>Portfolio</span>                           
             </h2>
-            
         </div>
-        <div class="nav2">
-            <ul id="navigation">
+        <!--HUMBERGURE-->
+        <div id="myNav" class="overlay1">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay1-content">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -34,8 +37,58 @@
                 <li><a href="#hobby">Hobby</a></li>
                 <li><a href="#ref">Referees</a></li>
                 <li><a href="#footer">contact</a></li>
+            </div>
+        </div>
+    <!--END HUMBERGER-->
+        <div class="nav2">
+            <ul id="navigation">
+                <div class="one">
+                    <li id="removethis"><a href="#home">Home</a></li>
+                    <div class="dropdown-content">
+                        <a href="#about">About</a>
+                        <a href="#about">Objectives</a>
+                    </div>
+                </div>
+                <div class="one">
+                    <li id="removethis"><a href="#about">About</a></li>
+                    <div class="dropdown-content">
+                        <a href="#about">About Me</a>
+                        <a href="#myskills">My Skills</a>
+                        <a href="#myvision">My Vision</a>
+                        <a href="#mymotto">My Motto</a>
+                    </div>
+                </div>
+                <div class="one">
+                    <li id="removethis"><a href="#experience">Experience</a></li>
+                    <div class="dropdown-content">
+                        <a href="#experience">Kenya Power</a>
+                        <a href="#ntti">NTTI-ICT Club</a>
+                    </div>
+                </div>
+                <div class="one">
+                    <li id="removethis"><a href="#services">Experties</a></li>
+                    <div class="dropdown-content">
+                        <a href="#services">Pentesting</a>
+                        <a href="#services">Programming</a>
+                        <a href="#services">Designing</a>
+                    </div>
+                </div>
+                <div class="one">
+                    <li id="removethis"><a href="#hobby">Hobby</a></li>
+                </div>
+                <div class="one">
+                    <li id="removethis"><a href="#referees">Referees</a></li>
+                    <div class="dropdown-content">
+                        <a href="#referees">Mr Moses</a>
+                        <a href="#referees">Madam Irene</a>
+                    </div>
+                </div>
+                <div class="one">
+                    <<li id="removethis"><a href="#footer">contact</a></li>
+                </div>
             </ul>
         </div>
+        <span onclick="openNav()" class="fa-solid fa-bars" id="openNav"></span>
     </nav>
     <div class="father">
         <div class="f-main">
@@ -48,11 +101,17 @@
             </div><!--end right-->
             <div class="left">
                 <div class="alltext">
-                    <h4>Hello My name is</h4>
-                    <h1><span>Odhiambo</span> Churchill</h1>
-                    <h4>
-                        I'm a CyberSecurity Specialist
-                    </h4>
+                    <div class="alltext1">
+                        <h4>Hello My name is</h4>
+                        <h1><span>Odhiambo</span> Churchill</h1>
+                    </div>
+                    <div class="alltext2">
+                        <h4>
+                            <span class="text-1">I'm a CyberSecurity Specialist</span>
+                            <span class="text-2">I'm a Programmer</span>
+                            <span id="su">I am a Programmer</span>
+                        </h4>
+                    </div>
                     <!--placeholder-->
                     <h3 id="ph"></h3>
                     <!--place holder-->
@@ -73,11 +132,11 @@
                     <h2>About me</h2>
                     <p>My name is Churchill Odhiambo, I have always wanted to get into IT since childhood. My focus is mostly in Cybersecurity, the urge of standing up for those who cannot stand for themselves. Protecting everyone from the invisible hands that control's steal's and lie to human kind in the internet</p>
                     <p>Not only do I have skills in cybersecurity, I am also a programmer, Fullstack Developer. I have knowledge In Graphics designing and hardware repair. I am good in troubleshooting computers, printers and many more troubleshooting skills</p>
-                    <p>Via programming i learnt about networking skills, different Protocols: FTP, UDP, SSH, HTTP, HTTPS and many more, I have learnt how to program sockets in python, CCNA, ComptiaA+, Comptia Security, I have learnt all these via personal projects and online available resource, to add, shout out to My Programming Lecturer Mr Moses Ngure who gave me a strong foundation in C and C++ programming.</p>
+                    <p  id="myskills">Via programming i learnt about networking skills, different Protocols: FTP, UDP, SSH, HTTP, HTTPS and many more, I have learnt how to program sockets in python, CCNA, ComptiaA+, Comptia Security, I have learnt all these via personal projects and online available resource, to add, shout out to My Programming Lecturer Mr Moses Ngure who gave me a strong foundation in C and C++ programming.</p>
                     <h2>My Skills</h2>
-                    <p>I have devoloped a couple of skills to date, I have developed Communication SKills, Team Player, Critical Thinker and ability to solve technical problems via code automation and open mind. In addition, I am a hardworking kind and I have to end whatever I have started</p>
+                    <p id="myvision">I have devoloped a couple of skills to date, I have developed Communication SKills, Team Player, Critical Thinker and ability to solve technical problems via code automation and open mind. In addition, I am a hardworking kind and I have to end whatever I have started</p>
                     <h2>My vision</h2>
-                    <p>My vision as a Cybersecurity personel is, as Technology evolve , the more risky the internet becomes, IOT devices and many more devices too. I look foward to making the internet a safe space, free from Cyber-bullying, Cyber-crimes, zero privacy and many more cybercrimes such that human kind can enjoy their lifestyle surveilance free</p>
+                    <p id="mymotto">My vision as a Cybersecurity personel is, as Technology evolve , the more risky the internet becomes, IOT devices and many more devices too. I look foward to making the internet a safe space, free from Cyber-bullying, Cyber-crimes, zero privacy and many more cybercrimes such that human kind can enjoy their lifestyle surveilance free</p>
                     <h2>My Motto</h2>
                     <p>No matter how hard it gets, Dont Give up</p>
                 </div>
@@ -88,10 +147,10 @@
 <section class="experience" id="experience">
     <center><h1>My Experience</h1></center>
     <div class="about_main">
-        <img src="mask.jpg" alt="" id="about-img">
+        <img src="mask.jpg" alt="pass" id="about-img">
         <div class="about-text">
             <h2>Kenya Power</h2>
-            <p>I worked as an attachee at Kenya Power Lighting Company for 3 months where I enhanced My existing knowledge in Networking, Troubleshooting Computers, Printers and many Hardware stuffs like CMOS, RAM, BIOS name them, I enjoyed the stay there as each day i learnt something new</p>
+            <p id="ntti">I worked as an attachee at Kenya Power Lighting Company for 3 months where I enhanced My existing knowledge in Networking, Troubleshooting Computers, Printers and many Hardware stuffs like CMOS, RAM, BIOS name them, I enjoyed the stay there as each day i learnt something new</p>
             
             <h2>NTTI-ICT CLUB</h2>
             <p>In Nairobi Technical I have Taught on programming with python, nodejs, Web Development and even Cybersecurity at large. In addittion to the teaching stuff, I have also created awareness to both students and Lecturers on how they can easily be hacked and how to stay <i>safe in the internet</i> </p>
@@ -114,9 +173,8 @@
                         <i class="fas fa-bars"></i>
                         <h5>Pentesting</h5>
                         <div class="pra">
-                            <p>I can test most of the systems and check if or not the are vulnerable to attacks. if they are i can advice on how to prevent your system from being an easy target to Black hat Hackers</p>
                             <p style="text-align: center;">
-                                <!--<a class="button" href="#">read more</a>-->
+                            <a class="button" href="cybersecurity.html">read more</a>
                             </p>
                         </div>
                     </div>
@@ -125,9 +183,8 @@
                         <i class="fas fa-user"></i>
                         <h5>Programming</h5>
                         <div class="pra">
-                            <p>I am a Programmer I program in Python, Ruby, nodejs, C++ and Java I am also fluent in SQL and mongodb I can build APIs amd backend development, My main focus on programming is CyberSecurity, where i program Cybersecurity Tools</p>
                             <p style="text-align: center;">
-                                <!--<a class="button" href="#">read more</a>-->
+                                <a class="button" href="programming.html">read more</a>
                             </p>
                         </div>
                     </div>
@@ -136,16 +193,13 @@
                         <i class="fas fa-terminal"></i>
                         <h5>Designing</h5>
                         <div class="pra">
-                            <p>In addition I am also a a web developer Front-end. Graphics Designer part time. I can create Posters, Flyers, Business Cards and many more Designing techniques</p>
                             <p style="text-align: center;">
-                                <!--<a class="button" href="#">read more</a>-->
+                                <a class="button" href="graphics.html">read more</a>
                             </p>
                         </div>
                     </div> 
                 </div>
             </div>
-    
-        
 <!--contact us-->
     <div class="hobby" id="hobby">
         <h1 id="call">My hobby</h1>
@@ -153,7 +207,7 @@
         <p>Besides my ICT hobbies, Whenever I am not in my vscode or in my terminal with black screen and green font color, I also Love playing football and Basketball</p>
     </div>
     <!--REFFERIES-->
-    <div class="refer" >
+    <div class="refer" id="referees">
         <div class="title">
             <h2>Referees</h2>
         </div>
@@ -228,5 +282,6 @@
     <h2 id="ls">Hire Me Today</h2>
     <br>-->
     </div>
+    <script src="HUM.JS"></script>
 </body>
 </html>

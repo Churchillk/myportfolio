@@ -41,17 +41,15 @@ nav
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 8%;
-    padding-top: 45px;
     padding-right: 8%;
+    padding-top: 1%;
     background-color: black;
 }
-
 .logo
 {
     color: #ffffff;
     font-size: 35px;
     letter-spacing: 1px;
-    cursor: pointer;
 }
 .f-main #login
 {
@@ -62,6 +60,28 @@ nav
     left: 150%;
     top: 2%;
 }
+.nav1
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav2
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+#navigation
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
 span
 {
     color: #f9004d;
@@ -70,6 +90,8 @@ span a
 {
     color: #60bd13e5;
     text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
 }
 /*navigation bar */
 nav ul li
@@ -90,6 +112,10 @@ nav ul li a:hover
     color: #f9004d;
     transition: .4s;
 }
+#openNav
+{
+    display: none;
+}
 .btn
 {
     background-color: rgb(25, 150, 13);
@@ -105,6 +131,74 @@ nav ul li a:hover
 {
     transform: scale(1.2); 
 }
+/*drop*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown-content a
+  {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+  .dropdown-content a:hover
+  {
+    text-decoration: none;
+    background-color: #2c2b2b;
+    color: rgb(255, 255, 255);
+  }
+  .nav2 .one:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    color: #f9004d;
+  }
+/*end drop*/
+/*OVERLAY AND NAVIGATION*/
+ .overlay1 {
+    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+ }
+  .overlay1-content {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay1 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #2e2f30;
+    display: block;
+    transition: 0.3s;
+  }
+  .overlay1 a:hover, .overlay1 a:focus {
+    color: #f9004d;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay1 .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+/*OVERLAY AND NAVIGATION*/
 /*first screen */
 .content
 {
@@ -188,6 +282,22 @@ h4
     top: 6px;
     right: 6px;
 }
+.alltext
+{
+    display: flex;
+    flex-direction: column;
+}
+.alltext2 h4
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+#su
+{
+    display: none;
+}
 #first-pic
 {
     max-width:250px;
@@ -270,7 +380,6 @@ button:hover
     cursor: pointer;
     color: #ffffff;
 }
-/*services*/
 /*experience*/
 .experience
 {
@@ -279,6 +388,8 @@ button:hover
     background: black;
     
 }
+/*end experience */
+/* start services and experties */
 .services
 {
     background: #101010;
@@ -300,13 +411,13 @@ button:hover
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 350px;
     flex-wrap: wrap;
 }
 .card
 {
-    height: auto;
-    width: 335px;
+    height: 55%;
+    min-width: 25%;
     padding: 20px 35px;
     background: black;
     border-radius: 20px;
@@ -314,28 +425,20 @@ button:hover
     position: relative;
     overflow: hidden;
     text-align: center;
-    background-image: url("");
 }
 .card i
 {
-    font-size: 50px;
+    font-size: 35px;
     display: block;
     text-align: center;
-    margin: 25px 0px;
+    margin: 15px 0px;
     color: #f9004d;
 }
-h5
+.card h5
 {
     color: #ffffff;
-    font-size: 23px;
+    font-size: 18px;
     margin-bottom: 15px; 
-}
-.pra p
-{
-    color: rgb(128, 133, 131);
-    font-size: 16px;
-    line-height: 27px;
-    margin-bottom: 25px;
 }
 .card .button
 {
@@ -346,7 +449,7 @@ h5
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    padding: 9px 22px;
+    padding: 5px 10px;
     transition: .4s;
 }
 .card .button:hover
@@ -356,10 +459,12 @@ h5
     cursor: pointer;
     color: #ffffff;
 }
+/* end start services and experties */
+/* hobby */
 .hobby
 {
     width: 100%;
-    height: 290px;
+    min-height: 450px;
     background: black;
     display: flex;
     flex-direction: column;
@@ -377,6 +482,7 @@ h5
     padding-bottom: 10px;
     margin: 0 15%;
 }
+/* end hobby */
 /*referees*/
 .refer
 {
@@ -387,13 +493,6 @@ h5
     background-blend-mode: lighten;
     
 }
-.title h2
-{
-    color: rgb(255, 255, 255);
-    font-size: 45px;
-    margin: 30px auto;
-    text-align: center;
-}
 .ref-box
 {
     display: flex;
@@ -402,27 +501,6 @@ h5
     align-items: center;
     min-height: 400px;
     flex-wrap: wrap;
-}
-.card
-{
-    height: auto;
-    width: 335px;
-    padding: 20px 35px;
-    background: black;
-    border-radius: 20px;
-    margin: 0 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    background-image: url("");
-}
-.card i
-{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 25px 0px;
-    color: #f9004d;
 }
 h5
 {
@@ -443,7 +521,7 @@ h5
 {
     border-radius: 25px;
     background-color: #2c2b2b;
-    width: 320px;
+    width: 290px;
     height: auto;
     margin-bottom: 5%;
 }
@@ -506,7 +584,7 @@ h5
     margin-bottom: 10px;
     color: #a5a5a5;
 }
-/*referees*/
+/*end referees*/
 #footer
 {
     width: 100%;
@@ -620,3 +698,139 @@ h5
 }
 
 /*WATER*/
+/*screen view*/
+@media screen and (max-width: 780px) 
+{
+    *
+    {
+        padding: 0;
+        margin: 0;
+        
+    }
+    .father
+    {
+        margin: 0;
+        overflow: hidden;
+    }
+    /*navigation*/
+    nav
+    {
+        position: fixed;
+        display: flex;
+        z-index: 10;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 2%;
+        padding-top: 30px;
+        padding-right: 3%;
+        justify-content: center;
+    }
+    .nav2 #navigation
+    {
+        position: relative;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #openNav
+    {
+        position: absolute;
+        right: 2%;
+        display: block;
+    }
+    nav ul .one
+    {
+        display: none;
+    }
+    #removethis
+    {
+        display: none;
+    }
+    .nav1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav2
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fillnav h2
+    {
+        font-size: 100%;
+    }
+    /*end nav */
+    /*first screen*/
+    .alltext2 h4 span
+    {
+        display: none;
+    }
+    #su
+    {
+    display: block;
+    }
+    /*end first screen*/
+    /*about*/
+    #about-img
+    {
+        display: none;
+    }
+    /*about*/
+    #ph
+    {
+        display: none;
+    }
+    .logo
+    {
+        align-self: center;
+    }
+    .box1
+    {
+        margin: auto;
+        width: 90%;
+    }
+    #first-pic
+    {
+        width: 300px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .mother
+    {
+        padding-top: 130px;
+    }
+    #h2whoweare, #h2howtohelp
+    {
+    padding-top: 80px;
+    }
+    #footer
+    {
+        background-position: center;
+        background-size: auto;
+    } 
+    .services
+    {
+        padding-top: 120px;
+    }
+    .card
+    {
+        max-height: auto;
+        margin-bottom: 10%;
+        min-width: 50%;
+    }
+    .pra p
+    {
+        font-weight: bold;
+    }
+    .overlay1 a {font-size: 20px}
+    .overlay1 .closebtn
+     {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+
+}
