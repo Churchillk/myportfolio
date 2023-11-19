@@ -287,16 +287,14 @@ h4
     display: flex;
     flex-direction: column;
 }
-.alltext2 h4
+.alltext a
 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
+    text-decoration: none;
+    font-size: 30px;
 }
-#su
+.alltext2 h1
 {
-    display: none;
+    font-size: 33px;
 }
 #first-pic
 {
@@ -764,14 +762,10 @@ h5
     }
     /*end nav */
     /*first screen*/
-    .alltext2 h4 span
+    /* .alltext2 h4 span
     {
-        display: none;
-    }
-    #su
-    {
-    display: block;
-    }
+        font-weight: bold;
+    } */
     /*end first screen*/
     /*about*/
     #about-img
